@@ -13,16 +13,16 @@
 
 // Example
 
-let x = "Aasif"; // Global Scope
+// let x = "Aasif"; // Global Scope
 
-function test() {
-    let y = 23; // Local Scope
+// function test() {
+//     let y = 23; // Local Scope
 
-    console.log(x);
-    console.log(y);
-}
+//     console.log(x);
+//     console.log(y);
+// }
 
-test();
+// test();
 
 
 // ===============================
@@ -35,15 +35,15 @@ test();
 // 2. if...else
 // 3. if...else if...else
 
-let marks = 88;
+// let marks = 88;
 
-if (marks >= 89) {
-    console.log("Grade A");
-} else if (marks >= 75) {
-    console.log("Grade B");
-} else {
-    console.log("Grade C");
-}
+// if (marks >= 89) {
+//     console.log("Grade A");
+// } else if (marks >= 75) {
+//     console.log("Grade B");
+// } else {
+//     console.log("Grade C");
+// }
 
 
 // ===============================
@@ -52,24 +52,24 @@ if (marks >= 89) {
 
 // Switch case ka use multiple conditions ko handle karne ke liye kiya jata hai.
 
-let day = 2;
+// let day = 2;
 
-switch (day) {
-    case 1:
-        console.log("Sunday");
-        break;
+// switch (day) {
+//     case 1:
+//         console.log("Sunday");
+//         break;
 
-    case 2:
-        console.log("Monday");
-        break;
+//     case 2:
+//         console.log("Monday");
+//         break;
 
-    case 3:
-        console.log("Wednesday");
-        break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
 
-    default:
-        console.log("Invalid Day");
-}
+//     default:
+//         console.log("Invalid Day");
+// }
 
 
 // ===============================
@@ -80,51 +80,51 @@ switch (day) {
 
 // 1. For Loop
 
-for (let i = 1; i <= 5; i++) {
-    console.log("For Loop:", i);
-}
+// for (let i = 1; i <= 5; i++) {
+//     console.log("For Loop:", i);
+// }
 
 
 // 2. While Loop
 
-let i = 1;
+// let i = 1;
 
-while (i <= 5) {
-    console.log("While Loop:", i);
-    i++;
-}
+// while (i <= 5) {
+//     console.log("While Loop:", i);
+//     i++;
+// }
 
 
 // 3. Do While Loop
 // Do While loop kam se kam ek baar zaroor execute hota hai.
 
-let j = 1;
+// let j = 1;
 
-do {
-    console.log("Do While Loop:", j);
-    j++;
-} while (j <= 4);
+// do {
+//     console.log("Do While Loop:", j);
+//     j++;
+// } while (j <= 4);
 
 
 // ===============================
 // STRING METHODS
 // ===============================
 
-let str = "welcome to javascript";
+// let str = "welcome to javascript";
 
-console.log(str.length);          // String length
-console.log(str.toUpperCase());   // Uppercase
-console.log(str.toLowerCase());   // Lowercase
-console.log(str.includes("java"));// Check substring
+// console.log(str.length);          // String length
+// console.log(str.toUpperCase());   // Uppercase
+// console.log(str.toLowerCase());   // Lowercase
+// console.log(str.includes("java"));// Check substring
 
-if (str.includes("java")) {
-    console.log("Yes, Java is present.");
-} else {
-    console.log("Java is not present.");
-}
+// if (str.includes("java")) {
+//     console.log("Yes, Java is present.");
+// } else {
+//     console.log("Java is not present.");
+// }
 
-console.log(str.replace("javascript", "codekerdos"));
-console.log(str.slice(0, 7));
+// console.log(str.replace("javascript", "codekerdos"));
+// console.log(str.slice(0, 7));
 
 
 // ===============================
@@ -134,25 +134,25 @@ console.log(str.slice(0, 7));
 // ==  => Sirf value compare karta hai.
 // === => Value aur data type dono compare karta hai.
 
-let x1 = "5";
-let y1 = 5;
+// let x1 = "5";
+// let y1 = 5;
 
-if (x1 == y1) {
-    console.log("true");
-} else {
-    console.log("false");
-}
+// if (x1 == y1) {
+//     console.log("true");
+// } else {
+//     console.log("false");
+// }
 // Output: true
 
 
-let a = "5";
-let b = 5;
+// let a = "5";
+// let b = 5;
 
-if (a === b) {
-    console.log("true");
-} else {
-    console.log("false");
-}
+// if (a === b) {
+//     console.log("true");
+// } else {
+//     console.log("false");
+// }
 // Output: false
 
 // ===============================
@@ -170,10 +170,10 @@ if (a === b) {
 // Undefined ka matlab hai ki variable declare kiya gaya hai,
 // lekin usko abhi tak koi value assign nahi ki gayi hai.
 
-let item = 100;
-let item2;
+// let item = 100;
+// let item2;
 
-console.log(item + item2);
+// console.log(item + item2);
 
 // Output: NaN
 // Kyunki item2 ki value undefined hai.
@@ -183,10 +183,10 @@ console.log(item + item2);
 // Null ek intentional (jaan-boojh kar) empty value hai
 // jo developer khud assign karta hai.
 
-let item1 = 100;
-let item3 = null; // null ki numeric value 0 ki tarah behave karti hai
+//let item1 = 100;
+//let item3 = null; // null ki numeric value 0 ki tarah behave karti hai
 
-console.log(item1 + item3);
+//console.log(item1 + item3);
 
 // Output: 100
 // Kyunki 100 + null = 100
@@ -237,3 +237,128 @@ console.log(item1 + item3);
 // Object
 // Array
 // Function
+
+
+
+// ========================
+// Array or Object
+// ========================
+// Object => Object is a non-primitive data type that stores data in the form of key-value pairs
+
+// const person = {
+//     name: "aasif",
+//     age: 29,
+//     job: "web development"
+// };
+
+// console.log(person);
+
+// // 1. Object Literal (Most Common)
+// const item = {
+//     name: "amit",
+//     age: 23,
+//     country: "india"
+// };
+
+// // 2. Using Object Constructor
+// let item2 = new Object();
+// console.log(typeof item2); // object
+// item2.name = "bajid";
+// item2.age = 23;
+// console.log(item2);
+
+
+// // Using factory function
+
+// function parson1(name,age) {
+//     return{
+//         name,
+//         age
+//     }
+// }
+// const p1 = parson1("asik",22);
+// const p2 = parson1("Aarish",23);
+// console.log(p1)
+// console.log(p2)
+// console.log(typeof(p1))  //Object
+
+
+// // Using class (Advance) (constructor function) TODD
+
+// const greed ={
+//     name:"asif",
+//     age:12,
+//     greed2:function (){
+//         console.log("welcome to js")
+//     },
+//     hobbies:["singing","zim","playing kriket"],
+//     marred:false
+// }
+// console.log(greed)
+// console.log(greed.name)
+// console.log(greed.age)
+// console.log(greed.greed2())
+// console.log(greed.marred)
+// console.log(greed.hobbies[1])  //zim
+// // comman Buil-in onject method
+// console.log(Object.keys(greed))
+
+
+
+//Interview Definition
+//Array is a non-primitive data type used to store multiple values in a single variable. Array elements are stored using index numbers, starting from 0.
+
+
+//1. Empty Array
+const arr1 = [];
+console.log(arr1);
+
+
+//2. Number Array
+const numbers = [10, 20, 30, 40];
+console.log(numbers);
+
+
+//3. String Array
+const names = ["Aasif", "Amit", "Rahul"];
+console.log(names);
+
+
+//4. Boolean Array
+const status = [true, false, true];
+console.log(status);
+
+
+//5. Mixed Array
+const data = ["Aasif", 29, true, null];
+console.log(data);
+
+
+//6. Array of Objects
+const students = [
+  { name: "Aasif", age: 20 },
+  { name: "Amit", age: 21 }
+];
+console.log(students);
+
+
+//7. Nested Array (Array Inside Array)
+const nested = [
+  [1, 2],
+  [3, 4],
+  [5, 6]
+];
+console.log(nested);
+
+
+//8. Array Using Constructor
+const arr2 = new Array(1, 2, 3, 4);
+console.log(arr2);
+
+
+//Example:
+const fruits1 = ["Apple", "Mango", "Banana"];
+
+console.log(fruits1[0]); // Apple
+console.log(fruits1[1]); // Mango
+console.log(fruits1[2]); // Banana
