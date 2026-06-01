@@ -1,0 +1,122 @@
+// ========================
+// Array or Object
+// ========================
+// Object => Object is a non-primitive data type that stores data in the form of key-value pairs
+
+// const person = {
+//     name: "aasif",
+//     age: 29,
+//     job: "web development"
+// };
+
+// console.log(person);
+
+// // 1. Object Literal (Most Common)
+// const item = {
+//     name: "amit",
+//     age: 23,
+//     country: "india"
+// };
+
+// // 2. Using Object Constructor
+// let item2 = new Object();
+// console.log(typeof item2); // object
+// item2.name = "bajid";
+// item2.age = 23;
+// console.log(item2);
+
+
+// // Using factory function
+
+// function parson1(name,age) {
+//     return{
+//         name,
+//         age
+//     }
+// }
+// const p1 = parson1("asik",22);
+// const p2 = parson1("Aarish",23);
+// console.log(p1)
+// console.log(p2)
+// console.log(typeof(p1))  //Object
+
+
+// // Using class (Advance) (constructor function) TODD
+
+// const greed ={
+//     name:"asif",
+//     age:12,
+//     greed2:function (){
+//         console.log("welcome to js")
+//     },
+//     hobbies:["singing","zim","playing kriket"],
+//     marred:false
+// }
+// console.log(greed)
+// console.log(greed.name)
+// console.log(greed.age)
+// console.log(greed.greed2())
+// console.log(greed.marred)
+// console.log(greed.hobbies[1])  //zim
+// // comman Buil-in onject method
+// console.log(Object.keys(greed))
+
+
+
+//Interview Definition
+//Array is a non-primitive data type used to store multiple values in a single variable. Array elements are stored using index numbers, starting from 0.
+
+
+//1. Empty Array
+const arr1 = [];
+console.log(arr1);
+
+
+//2. Number Array
+const numbers = [10, 20, 30, 40];
+console.log(numbers);
+
+
+//3. String Array
+const names = ["Aasif", "Amit", "Rahul"];
+console.log(names);
+
+
+//4. Boolean Array
+const status = [true, false, true];
+console.log(status);
+
+
+//5. Mixed Array
+const data = ["Aasif", 29, true, null];
+console.log(data);
+
+
+//6. Array of Objects
+const students = [
+  { name: "Aasif", age: 20 },
+  { name: "Amit", age: 21 }
+];
+console.log(students);
+
+
+//7. Nested Array (Array Inside Array)
+const nested = [
+  [1, 2],
+  [3, 4],
+  [5, 6]
+];
+console.log(nested);
+
+
+//8. Array Using Constructor
+const arr2 = new Array(1, 2, 3, 4);
+console.log(arr2);
+
+
+//Example:
+const fruits1 = ["Apple", "Mango", "Banana"];
+
+console.log(fruits1[0]); // Apple
+console.log(fruits1[1]); // Mango
+console.log(fruits1[2]); // Banana
