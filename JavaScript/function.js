@@ -104,3 +104,50 @@ function higherOrder(callback) {
 }
 
 higherOrder(greet);
+
+
+//1 fatorial function
+function fatorial(n){
+    if(n===0) return 1;
+    return n*fatorial(n-1)
+}
+console.log(fatorial(5));
+
+
+// 2Prime number cheeker
+function Prime(n){
+    if(n < 2) return false;
+    for(let i =2;i<= Math.sqrt(n);i++){
+        if(n % i === 0) return false
+    }
+   return true
+}
+console.log(Prime(11))  //true hai
+
+
+// 3.Function Expression
+// Function ko ek variable me store kiya gaya hai
+const findMax = function(arr) {
+    // Math.max() sabse badi value nikalta hai
+    // ...arr (spread operator) array ko alag-alag values me convert karta hai
+    // [2,3,4] => 2,3,4
+    return Math.max(...arr);
+};
+// Function call
+// Array pass kiya gaya hai
+console.log(findMax([2,3,2,4,5,11,1]));
+// Output: 11
+// Kyunki array me sabse badi value 11 hai
+
+
+// 4.Function Expression
+// String ko reverse karne ke liye
+const reciveStr = function(str) {
+    // split("") => string ko array me convert karta hai
+    // reverse() => array ko ulta karta hai
+    // join("") => array ko wapas string me convert karta hai
+    return str.split("").reverse().join("");
+};
+console.log(reciveStr("aasif"));
+
+
